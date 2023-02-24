@@ -4,6 +4,7 @@ const loadUser = () => {
     .then((data) => displayUser(data));
 };
 const displayUser = (user) => {
+  console.log(user);
   const genderTag = document.getElementById("gender");
   genderTag.innerHTML = user.results[0].gender;
 
@@ -14,8 +15,10 @@ const displayUser = (user) => {
     " " +
     user.results[0].name.last;
   document.getElementById("name").innerHTML = name;
-  //   const userImg = document.getElementById("img");
-  //   userImg.innerHTML = user.results.picture;
+  const userImg = document.getElementById("img");
+  userImg.innerHTML = `
+  <img src="${user.results[0].picture.large}"/>
+  `;
   console.log(user);
 };
 loadUser();
