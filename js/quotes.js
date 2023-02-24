@@ -21,3 +21,5 @@ const displayQuote = (quote) => {
 };
 
 loadQuote();
+
+const data = { result: [{ userName: { title: "Mr.", name: "sakib khan" } }] };
