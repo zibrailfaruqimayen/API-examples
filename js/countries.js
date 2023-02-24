@@ -40,10 +40,7 @@ const showCountryDetail = (country) => {
   <h2>Country Details</h2>
       <h3>Name: ${country.name.common}</h3>
       <p>Capital: ${country.capital ? country.capital : "No Capital"}</p>
-      <img src="${country.flags.png}"/> 
-      
-  
-  `;
+      <img src="${country.flags.png}"/> `;
 };
 
 loadCountries();
